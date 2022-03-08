@@ -1,0 +1,15 @@
+.circle-img {
+  width: 45%;
+}
+
+.circle-img-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
