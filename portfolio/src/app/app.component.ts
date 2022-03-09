@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  isActive: boolean = false;
+   public showMenu() {
+    this.isActive = !this.isActive;
+  }
 }
