@@ -1,5 +1,10 @@
 .nav {
-  background-color: var(--container-color-dark);
+  background:linear-gradient(268deg, #bfccff, #c473ff, #a716c2, #4e93ff);
+  background-size: 800% 800%;
+  -webkit-animation: mymove 22s ease infinite;
+  animation: mymove 15s ease infinite;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   padding-top: 2rem;
   position: fixed;
   top: 0;
@@ -60,7 +65,7 @@
 
 .nav__greeting {
   display: block;
-  color: var(--text-color-dark);
+  color: hsl(241, 37%, 33%);
   font-size: var(--small-font-size);
   font-weight: 500;
   margin-bottom: .25rem;
@@ -84,7 +89,7 @@
 }
 
 .nav__link {
-  color: var(--text-color-dark);
+  color:hsl(241, 37%, 33%);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -153,4 +158,32 @@
   -webkit-transform: translate(70%);
           transform: translate(70%);
 }
-/*# sourceMappingURL=app.component.css.map */
+
+.scroll-header {
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+/*# sourceMappingURL=app.component.css.map */ 
+
+@-webkit-keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
