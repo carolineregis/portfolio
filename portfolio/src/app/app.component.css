@@ -41,8 +41,8 @@
 }
 
 .nav__mask {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   background: linear-gradient(224deg, #a22fe9 -2%, #ddaafe 97%);
   border-radius: 1.5rem;
   overflow: hidden;

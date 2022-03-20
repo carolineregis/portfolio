@@ -11,13 +11,15 @@ export class AppComponent {
   isActive: boolean = false;
   isHidden: boolean = false;
   onScroll: boolean = false;
+  changeView: boolean = false;
 
    public showMenu() {
     this.isActive = !this.isActive;
+    this.changeView = this.isActive;
   }
 
   public hideMenu() {
-    this.isHidden = !this.isHidden;
+   this.isActive = !this.changeView;
   }
 
   public scrollPage() {

@@ -4,12 +4,12 @@
 
     </div>
     <div class="nav__close" id="nav-close">
-      <i class='bx bx-x'></i>
+      <i class='bx bx-x' (click)="hideMenu()"></i>
     </div>
 
     <div class="nav__data">
       <div class="nav__mask">
-        <img src="./../assets/circle.png" class="img">
+        <img src="./../assets/eu.jpg" class="img">
       </div>
 
       <span class="nav__greeting">Oii, eu sou a </span>
@@ -18,25 +18,25 @@
 
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#home" class="nav__link">
+        <a href="#home" class="nav__link" (click)="hideMenu()">
           <i class='bx bx-home' ></i> Home
         </a>
       </li>
 
       <li class="nav__item">
-        <a href="#about" class="nav__link">
+        <a href="#about" class="nav__link" (click)="hideMenu()">
           <i class='bx bx-user' ></i> Sobre
         </a>
       </li>
 
       <li class="nav__item">
-        <a href="#portfolio" class="nav__link">
+        <a href="#portfolio" class="nav__link" (click)="hideMenu()">
           <i class='bx bx-briefcase' ></i> Portfólio
         </a>
       </li>
 
       <li class="nav__item">
-        <a href="#contact" class="nav__link">
+        <a href="#contact" class="nav__link" (click)="hideMenu()">
           <i class='bx bx-message-square-dots' ></i> Contato
         </a>
       </li>
@@ -44,15 +44,14 @@
   </div>
 </nav>
 
-<main class="main" id="main">
+<main class="main" id="main" [ngClass]="isActive ? 'show-menu' : ' ' ">
   <header class="header" id="header">
     <nav class="header__nav container">
       <a href="" class="header__logo">
         Caroline
       </a>
 
-      <div class="header__toggle" id="header-toggle" (click)="showMenu()"
-      [ngClass]="isActive ? 'header__toggle show-mwenu' : 'header__toggle show-menu'">
+      <div class="header__toggle" id="header-toggle" (click)="showMenu()">
         <i class='bx bxs-grid' ></i>
       </div>
     </nav>
